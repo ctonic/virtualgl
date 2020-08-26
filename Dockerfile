@@ -6,7 +6,7 @@ RUN apt-get update &&\
     apt-get -y install wget
 
 # for Xdummy
-RUN apt-get -y install xserver-xorg-video-dummy x11vnc
+RUN apt-get -y install xserver-xorg-video-dummy x11vnc libglu1-mesa
 RUN wget http://xpra.org/xorg.conf
 
 # for VirtualGL
